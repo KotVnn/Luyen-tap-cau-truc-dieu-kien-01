@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01</title>
+    <script>
+        function chiahet(a, b) {
+            let sum = (a % b > 0) ? alert("Không chia hết.") : alert("Chia hết.");
+        }
+
+        function lop10(a) {
+            let sosanh = (a < 16) ? alert("Chưa đủ tuổi vào lớp 10 đâu e eiiii !") : alert("Okey cưng, vô lớp đi e eiii !!!")
+        }
+
+        function songuyen(a) {
+            let sosanh = (a > 0) ? alert("Số này to hơn 0 đấy !") : (a < 0) ? alert("Số này bé hơn 0 đấy !!!") : alert("Số này bằng 0 tròn trĩnh !!!")
+        }
+
+        function Basonguyen(a, b, c)
+        {
+                if (a > b) {
+                    if (a > c) {
+                        alert("Số " + a + " là số lớn nhất");
+                    }
+                    else alert("Số " + c + " là số lớn nhất");
+                } else if (b > c) {
+                    alert("Số " + b + " là số lớn nhất");
+                } else {
+                    alert("Số " + c + " là số lớn nhất");
+                }
+        }
+
+        function hocluc(a, b, c) {
+            let tbc = (a + b + c) / 3;
+            if (tbc > 7) alert("Học lực giỏi");
+            else if (tbc > 4) alert("Học lực khá");
+            else alert("Học lực trung bình");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="chiahet(parseInt(prompt('First number')),parseInt(prompt('Second number')));" type="button">Bài 1: Chia hết</button>
+    <button onclick="lop10(parseInt(prompt('Cho xin tuổi cái đêeeeeeeee')));" type="button">Bài 2: Check lớp 10</button>
+    <button onclick="songuyen(parseInt(prompt('Xin 1 số')));" type="button">Bài 3: Số nguyên</button>
+    <button onclick="Basonguyen(parseInt(prompt('First number')),parseInt(prompt('Second number')),parseInt(prompt('Third number')));" type="button">Bài 4: So sánh 3 số nguyên</button>
+    <button onclick="hocluc(parseInt(prompt('First number')),parseInt(prompt('Second number')),parseInt(prompt('Third number')));" type="button">Bài 5: Tính học lực</button>
+</body>
+</html>
